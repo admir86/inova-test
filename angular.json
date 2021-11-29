@@ -58,6 +58,32 @@
       },
       "tags": []
     },
+    "desktop": {
+      "projectType": "library",
+      "root": "libs/desktop",
+      "sourceRoot": "libs/desktop/src",
+      "prefix": "inova-test",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/desktop"],
+          "options": {
+            "jestConfig": "libs/desktop/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/desktop/src/**/*.ts",
+              "libs/desktop/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "user-app": {
       "projectType": "application",
       "root": "apps/user-app",

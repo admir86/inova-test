@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@inova-test/common": ["libs/common/src/index.ts"]
+      "@inova-test/common": ["libs/common/src/index.ts"],
+      "@inova-test/desktop": ["libs/desktop/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
